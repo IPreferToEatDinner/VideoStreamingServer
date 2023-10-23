@@ -1,0 +1,11 @@
+{
+  "name": "VideoStreamingServer",
+  "version": "1.0.0",
+  "description": "这是一个读取RTMP视频流并实时转换成flv格式的后端服务器",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "node-media-server": "^2.6.2"
+  }
+}
