@@ -1,3 +1,8 @@
+import NodeMediaServer from "node-media-server";
+
+/**
+ *@type {import(NodeMediaServer)}
+ */
 const config = {
 	rtmp: {
 		port: 1935,
@@ -8,7 +13,6 @@ const config = {
 	},
 	http: {
 		port: 8000,
-		mediaroot: './media',
 		allow_origin: '*',
 	},
 };
