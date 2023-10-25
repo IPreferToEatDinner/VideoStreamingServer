@@ -1,5 +1,11 @@
 import NodeMediaServer from 'node-media-server';
-import config from './src/config.js';
 
-const nms = new NodeMediaServer(config);
+const nms = new NodeMediaServer({
+	rtmp: { port: 1935 },
+	http: {
+		port: 8000,
+		allow_origin: '*',
+	},
+});
+
 nms.run();
